@@ -1,6 +1,6 @@
 package responses;
 
-import com.invest.beans.Stock_Now_All_Vo;
+import beans.Stock_Now_All_Vo;
 import lombok.Data;
 
 import java.util.List;

@@ -62,4 +62,8 @@ public class Stock_Now_All_Vo {
         流通市值
      */
     private String nmc;
+    /*
+    流通市值比例，需要计算
+    */
+    private String floatRatio;
 }

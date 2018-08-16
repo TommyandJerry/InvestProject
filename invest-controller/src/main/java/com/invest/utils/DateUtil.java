@@ -1,5 +1,7 @@
 package com.invest.utils;
 
+import org.springframework.stereotype.Component;
+
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.ParsePosition;
@@ -7,6 +9,7 @@ import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+@Component
 public class DateUtil {
     public String pattern="yyyy-MM-dd";
     public SimpleDateFormat formatter = new SimpleDateFormat(pattern);

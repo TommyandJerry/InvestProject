@@ -1,6 +1,7 @@
 package com.invest.utils;
 
 
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.math.BigDecimal;
@@ -12,6 +13,7 @@ import java.text.DecimalFormat;
  * @author yltang 2015-8-25 下午4:39:32
  */
 
+@Component
 public class CalculateUtils {
 
 

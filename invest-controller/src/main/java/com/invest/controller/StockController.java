@@ -2,6 +2,7 @@ package com.invest.controller;
 
 import beans.Stock_Now_All_Vo;
 import com.google.gson.Gson;
+import com.invest.utils.CalculateUtils;
 import com.invest.utils.HttpUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,9 @@ public class StockController {
     @Autowired
     private Gson gson;
 
+    @Autowired
+    private CalculateUtils calculateUtils;
+
     @RequestMapping(value = "/StockNowAll")
     public String StockNowAll(){
         String response = httpUtils.doGet(URL_stock_now_all);
@@ -38,6 +42,7 @@ public class StockController {
         List<Stock_Now_All_Vo> aim_stocks = new ArrayList<>();
         for(Stock_Now_All_Vo vo :stock_now_all_response.getData()){
             //TODO 准备计算符合条件的股票，还差增加String加减乘除的类
+            
         }
         return "hello home";
     }

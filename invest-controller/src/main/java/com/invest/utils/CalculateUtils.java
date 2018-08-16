@@ -1,8 +1,6 @@
 package com.invest.utils;
 
-import android.annotation.SuppressLint;
 
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.util.StringUtils;
 
 import java.math.BigDecimal;
